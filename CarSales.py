@@ -9,28 +9,28 @@ class carsales():
 
 
 honda = carsales('City',2014,500000,10000)
-Suzuki = carsales('swift',2012,200000,8000)
-Mitsubishi = carsales('lancer',2010,150000,10000)
+suzuki = carsales('swift',2012,200000,8000)
+mitsubishi = carsales('lancer',2010,150000,10000)
 
 print(honda.__dict__)
 print(Suzuki.__dict__)
 print(Mitsubishi.__dict__)
 
-buyer = ""
-Choice = input('Enter')
+
+choice = input('Which car You want:')
 
 
-if honda:
+if 'honda'==choice:
         print('The original amount is',honda.price)
         print('Your discount amount is:',honda.price-10000)
-        print(buyer)
 
-elif Suzuki:
-        print('Your discount amount is:',Suzuki.price-8000)
-        print(buyer)
-elif Mitsubishi:
-        print('Your discount amount is:',Mitsubishi.price-6500)
-        print(buyer)
+
+elif 'suzuki'==choice:
+        print('Your discount amount is:',suzuki.price-8000)
+        print
+elif 'mitsubishi'==choice:
+        print('Your discount amount is:',mitsubishi.price-6500)
+        print
 else:
         print('Thanks For coming')
 
